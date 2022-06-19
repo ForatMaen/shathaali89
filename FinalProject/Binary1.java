@@ -6,7 +6,7 @@ import java.util.Scanner;
 class Binary1{
     public static void main(String[] args)
     {
-       try (Scanner scanBinary = new Scanner(System.in)) {
+               Scanner scanBinary = new Scanner(System.in);
 		System.out.println("Please enter the any binary number:");
 		 
 		   int BinaryNum; 
@@ -28,7 +28,7 @@ class Binary1{
 		    PrintNumDigital(ConvertType);
 		  
 		}
-	}
+	
   
     }
     public static void PrintNumDigital(String num)
@@ -118,10 +118,10 @@ class Binary1{
 {  
 int exponent = 1;  
 
-for (int i = 1; i <= exponent0; i++)   //increment the value of i after each iteration until the condition becomes false  
+for (int i = 1; i <= exponent0; i++) {  //increment the value of i after each iteration until the condition becomes false  
  
-exponent = exponent * 2;  //calculates power 
-
+exponent *= 2;  //calculates power 
+}
 return exponent;  
 }  
  
